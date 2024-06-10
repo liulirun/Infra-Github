@@ -1,0 +1,28 @@
+
+#BK for repo module
+
+# module "branch_module" {
+#   source = "./modules/data_branch"
+# }
+
+# output "test_pr_info_branch" {
+#   value = module.branch_module.output_branch_test
+# }
+# output "action_branch" {
+#   value = module.branch_module.output_branch_action
+# }
+
+module "repo_module" {
+  source = "./modules/resource_repo"
+
+  # name        = "terraform_test_1"
+  # description = "terraform created repo: terraform_test_1"
+
+  # visibility         = "private"
+  # allow_squash_merge = false
+  # allow_rebase_merge = false
+}
+
+output "main_repo_output_1" {
+  value = module.repo_module.repo_module_output1
+}
