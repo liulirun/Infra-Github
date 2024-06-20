@@ -17,14 +17,14 @@ output "action_branch" {
   value = module.get_branch_module.output_branch_action
 }
 
-# create_repo
-resource "github_repository" "test_repo1" {
-  name               = "terraform_test_1"
-  description        = "terraform created repo: terraform_test_1"
-  visibility         = "private"
-  allow_squash_merge = false
-  allow_rebase_merge = false
-}
+# # create_repo
+# resource "github_repository" "test_repo1" {
+#   name               = "terraform_test_1"
+#   description        = "terraform created repo: terraform_test_1"
+#   visibility         = "private"
+#   allow_squash_merge = false
+#   allow_rebase_merge = false
+# }
 
 
 output "output_repo_action_visibility" {
