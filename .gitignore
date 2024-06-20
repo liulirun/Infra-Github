@@ -4,3 +4,5 @@
 .terraform/
 terragrunt/test/go.mod
 terragrunt/test/go.sum
+secret.tfvars
+tfplan
